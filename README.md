@@ -1,5 +1,5 @@
 # Dynamic React Dashboard - CNAPP Style
-
+ To View https://accunox-react-t.vercel.app/
 This project is a dynamic dashboard page built with React, Redux Toolkit, Tailwind CSS, and Chart.js. It was created as a frontend trainee assignment to demonstrate the ability to build interactive and data-driven user interfaces. The dashboard allows users to manage widgets within different categories dynamically.
 
 ## Features
