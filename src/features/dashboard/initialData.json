@@ -1,0 +1,88 @@
+[
+  {
+    "id": "cspm",
+    "name": "CSPM Executive Dashboard",
+    "widgets": [
+      {
+        "id": "cspm-cloud-accounts-initial",
+        "sourceTemplateId": "template-cloud-accounts",
+        "title": "Cloud Accounts",
+        "type": "doughnut",
+        "data": {
+          "labels": ["Connected", "Not Connected"],
+          "values": [2, 2],
+          "colors": ["#3B82F6", "#D1D5DB"],
+          "total": 4
+        }
+      },
+      {
+        "id": "cspm-cloud-risk-initial",
+        "sourceTemplateId": "template-cloud-risk",
+        "title": "Cloud Account Risk Assessment",
+        "type": "doughnut",
+        "data": {
+          "labels": ["Failed", "Warning", "Not available", "Passed"],
+          "values": [1689, 681, 36, 7253],
+          "colors": ["#EF4444", "#F59E0B", "#9CA3AF", "#10B981"],
+          "total": 9659
+        }
+      }
+    ]
+  },
+  {
+    "id": "cwpp",
+    "name": "CWPP Dashboard",
+    "widgets": [
+      {
+        "id": "cwpp-namespace-alerts-initial",
+        "sourceTemplateId": "template-namespace-alerts",
+        "title": "Top 5 Namespace Specific Alerts",
+        "type": "noData",
+        "data": {}
+      },
+      {
+        "id": "cwpp-workload-alerts-initial",
+        "sourceTemplateId": "template-workload-alerts",
+        "title": "Workload Alerts",
+        "type": "noData",
+        "data": {}
+      }
+    ]
+  },
+  {
+    "id": "registry",
+    "name": "Registry Scan",
+    "widgets": [
+      {
+        "id": "registry-image-risk-initial",
+        "sourceTemplateId": "template-image-risk",
+        "title": "Image Risk Assessment",
+        "type": "horizontalBar",
+        "data": {
+          "totalLabel": "Total Vulnerabilities",
+          "totalValue": 1470,
+          "segments": [
+            { "label": "Critical", "value": 9, "color": "#DC2626" },
+            { "label": "High", "value": 150, "color": "#F97316" },
+            { "label": "Medium", "value": 500, "color": "#FACC15" },
+            { "label": "Low", "value": 811, "color": "#84CC16" }
+          ]
+        }
+      },
+      {
+        "id": "registry-image-issues-initial",
+        "sourceTemplateId": "template-image-issues",
+        "title": "Image Security Issues",
+        "type": "horizontalBar",
+        "data": {
+          "totalLabel": "Total Images",
+          "totalValue": 2,
+          "segments": [
+            { "label": "Critical", "value": 2, "color": "#DC2626" },
+            { "label": "High", "value": 2, "color": "#F97316" }
+          ]
+        }
+      }
+    ]
+  }
+]
